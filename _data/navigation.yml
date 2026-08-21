@@ -1,0 +1,15 @@
+# ------------------------------------------------------------
+# Masthead navigation
+#
+# Minimal Mistakes reads the top navigation bar from THIS file
+# (site.data.navigation.main) — NOT from _config.yml. To add,
+# remove, or reorder links in the header, edit the list below.
+# Each item needs a "title" (the text shown) and a "url".
+# ------------------------------------------------------------
+main:
+  - title: "Field Reports"
+    url: /categories/#field-report
+  - title: "Essays"
+    url: /categories/#essay
+  - title: "About"
+    url: /about/

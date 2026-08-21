@@ -81,12 +81,9 @@ footer:
   links: []
 
 # ------------------------------------------------------------
-# Navigation (edit as pages are added)
+# Navigation
 # ------------------------------------------------------------
-main:
-  - title: "Field Reports"
-    url: /categories/#field-report
-  - title: "Essays"
-    url: /categories/#essay
-  - title: "About"
-    url: /about/
+# The masthead (top nav bar) is defined in _data/navigation.yml,
+# under the "main" key — that's where Minimal Mistakes looks for
+# it. Edit that file to change the header links. (A "main:" block
+# placed here in _config.yml is ignored by the theme.)
