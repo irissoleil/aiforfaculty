@@ -1,0 +1,92 @@
+# ------------------------------------------------------------
+# Site settings
+# ------------------------------------------------------------
+title: "AI for Faculty"
+subtitle: "Ethical, Equitable, and Courageous Teaching in the Age of AI"
+description: >-
+  An open, volunteer commons for postsecondary educators exploring how to
+  teach AI critically, design human-centered pedagogy, and engage students
+  without outsourcing judgment to algorithms.
+url: "https://www.aiforfaculty.com"
+baseurl: ""
+locale: "en-US"
+
+# ------------------------------------------------------------
+# Theme (pulled in remotely — GitHub Pages builds it for you,
+# no vendored theme files to maintain)
+# ------------------------------------------------------------
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+# ------------------------------------------------------------
+# Build settings
+# ------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+paginate: 10
+paginate_path: /page:num/
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# ------------------------------------------------------------
+# Archives — one page listing by category (Field Report / Essay),
+# one listing by tag (theme, e.g. assessment, policy, tools)
+# ------------------------------------------------------------
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# ------------------------------------------------------------
+# Defaults applied to every post
+# ------------------------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      toc: false
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+
+# ------------------------------------------------------------
+# Author / sidebar profile
+# ------------------------------------------------------------
+author:
+  name: "AI for Faculty"
+  bio: "An open, volunteer commons for postsecondary educators navigating AI in higher ed."
+  links: []
+
+footer:
+  links: []
+
+# ------------------------------------------------------------
+# Navigation (edit as pages are added)
+# ------------------------------------------------------------
+main:
+  - title: "Field Reports"
+    url: /categories/#field-report
+  - title: "Essays"
+    url: /categories/#essay
+  - title: "About"
+    url: /about/
