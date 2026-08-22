@@ -85,3 +85,9 @@ $masthead-link-color-hover: $primary-color;
   //  Space the two buttons a touch on their own line.
   .btn { margin: 0.25em 0.3em; }
 }
+
+//  Hide the theme's automatic page title on the HOMEPAGE only. The site
+//  name in the top bar and the hero headline already announce the site,
+//  so the extra "AI for Faculty" heading is redundant here. Posts and the
+//  About page still show their own titles as normal.
+.layout--home .page__title { display: none; }
