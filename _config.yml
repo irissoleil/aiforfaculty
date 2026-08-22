@@ -26,6 +26,12 @@ highlighter: rouge
 paginate: 10
 paginate_path: /page:num/
 
+# Client-side search (lunr) — adds a search icon to the top bar.
+# No external service; the index is built at publish time. Handy as
+# your archive of field reports grows.
+search: true
+search_full_content: true
+
 include:
   - _pages
 
@@ -74,8 +80,21 @@ defaults:
 # ------------------------------------------------------------
 author:
   name: "AI for Faculty"
-  bio: "An open, volunteer commons for postsecondary educators navigating AI in higher ed."
-  links: []
+  # Prefer your own byline on posts? Change the line above to "Iris S. De Lis".
+  # avatar: "/assets/images/bio-photo.jpg"   # add the image first, then uncomment
+  bio: "Slower thinking about AI and higher ed — field reports and essays on teaching, assessment, and academic judgment."
+  # location: "United States"                 # optional
+  links:
+    # Uncomment the ones you use and fill in the real URLs; delete the rest.
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope"
+    #   url: "mailto:you@example.com"
+    # - label: "Mastodon"
+    #   icon: "fab fa-fw fa-mastodon"
+    #   url: "https://your.instance/@you"
+    # - label: "RSS"
+    #   icon: "fas fa-fw fa-rss-square"
+    #   url: "/feed.xml"
 
 footer:
   links: []

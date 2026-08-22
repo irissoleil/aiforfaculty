@@ -1,0 +1,87 @@
+---
+# The front matter (these two dashed lines) is required so Jekyll
+# processes this file. Leave it here even though it's empty.
+---
+
+@charset "utf-8";
+
+// =====================================================================
+//  AI for Faculty — custom styling
+//  A thin layer on top of the Minimal Mistakes theme. Everything here
+//  is yours to tweak; the comments explain what each part does. You do
+//  NOT need to touch the theme itself — this file wins over its defaults.
+// =====================================================================
+
+// ---- Typography -----------------------------------------------------
+//  Body copy in a warm reading serif; headings in a clean sans for
+//  structure and contrast. The fonts themselves are loaded in
+//  _includes/head/custom.html — if you change a font here, change it
+//  there too.
+$serif:      "Source Serif 4", Georgia, "Times New Roman", serif;
+$sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             Helvetica, Arial, sans-serif;
+
+$global-font-family: $serif;      // the body text you read
+$header-font-family: $sans-serif; // headings and titles
+
+// ---- Color palette --------------------------------------------------
+//  A warm "paper" reading surface, near-black ink, and a single
+//  restrained deep-teal accent. Want a different feel? Change these
+//  seven lines and the whole site follows.
+$background-color:  #faf8f4;  // warm paper background
+$text-color:        #23211e;  // warm near-black ink
+$muted-text-color:  #6a645b;  // dates, captions, meta text
+$primary-color:     #2f6d66;  // accent — links & buttons
+$link-color:        #2f6d66;
+$link-color-hover:  #21514c;  // slightly darker on hover
+$border-color:      #e6e1d8;  // hairlines and rules
+
+//  Keep the top navigation quiet: ink-colored text, accent on hover.
+$masthead-link-color:       $text-color;
+$masthead-link-color-hover: $primary-color;
+
+// ---- Bring in the theme --------------------------------------------
+//  These two imports pull in Minimal Mistakes using the variables set
+//  above. Leave them below your overrides.
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// ---- A few finishing touches ---------------------------------------
+//  Roomier line-height makes long-form reading more comfortable.
+.page__content {
+  p, li { line-height: 1.72; }
+}
+
+//  Homepage intro block (the hero at the top of index.md).
+.home-hero {
+  max-width: 44em;
+  margin: 1.25em auto 2.5em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $border-color;
+  text-align: center;
+
+  &__title {
+    font-family: $serif;
+    font-weight: 600;
+    font-size: 2.1em;
+    line-height: 1.18;
+    margin: 0 0 0.45em;
+  }
+
+  &__tagline {
+    font-family: $sans-serif;
+    color: $muted-text-color;
+    font-size: 1.02em;
+    letter-spacing: 0.01em;
+    margin: 0 0 1.15em;
+  }
+
+  &__lede {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 0 auto 1.5em;
+  }
+
+  //  Space the two buttons a touch on their own line.
+  .btn { margin: 0.25em 0.3em; }
+}
