@@ -1,0 +1,13 @@
+# macOS Finder junk
+.DS_Store
+
+# Jekyll build output & caches (only relevant if you ever build locally;
+# GitHub Pages builds in the cloud, so these never need to be committed)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler local install
+.bundle/
+vendor/
