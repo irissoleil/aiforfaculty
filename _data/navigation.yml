@@ -8,8 +8,8 @@
 # ------------------------------------------------------------
 main:
   - title: "Field Reports"
-    url: /categories/#field-report
+    url: /field-reports/
   - title: "Essays"
-    url: /categories/#essay
+    url: /essays/
   - title: "About"
     url: /about/
